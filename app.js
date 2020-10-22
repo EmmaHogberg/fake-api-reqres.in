@@ -37,12 +37,12 @@ showUserButtonEl.addEventListener("click", (e) => {
     .then((res) => res.json())
     .then((data) => {
       const users = data.data;
-      const UsersList = users
+      const usersList = users
         .map((user) => {
           return `<li class="user" data-userid = "${user.id}">${user.first_name}</li>`;
         })
         .join("");
-      usersListEl.innerHTML = UsersList;
+      usersListEl.innerHTML = usersList;
     });
 });
 
