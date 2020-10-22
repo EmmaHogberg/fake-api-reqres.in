@@ -1,3 +1,67 @@
-.hide {
-  display: none;
+body {
+  display: grid;
+  justify-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30px 130px 20px 500px 100px 30px;
+  grid-template-rows: 100px 30px 30px 30px 30px 30px 270px 30px;
+}
+
+h1 {
+  font-size: 40px;
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+form {
+  justify-self: center;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#loginErrorMessage {
+  font-size: 20px;
+  color: red;
+  justify-self: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.showUsersButton {
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.usersList {
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  list-style: none;
+  margin-left: -40px;
+}
+
+li {
+  margin: 12px;
+}
+
+.userInfoContainer {
+  justify-self: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
